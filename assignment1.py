@@ -28,3 +28,4 @@ assert gcflcm(24,16) == (8,48)
 assert gcflcm(12,30) == (6,60)
 assert gcflcm(250,1480) == (10,37000)
 
+wwwwwww
