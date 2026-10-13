@@ -8,9 +8,11 @@ Some ideas (you don't have to use them):
 * a function that takes 2 lists and determines the largest number that is common to both sets
 """
 def factors(number):
-    # number is an integer value
-    # you will likely need to sort the values of your list
+    number=int(number)
     answer = []
+    for i in range(1, number+1):
+        if number%i == 0:
+           answer.append(i)
     return answer
 
 def gcflcm(n1,n2):
@@ -27,5 +29,3 @@ assert gcflcm(3,3) == (3,3)
 assert gcflcm(24,16) == (8,48)
 assert gcflcm(12,30) == (6,60)
 assert gcflcm(250,1480) == (10,37000)
-
-wwwwwww
