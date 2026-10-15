@@ -1,17 +1,9 @@
-def gcflcm(n1,n2):
-    number=max(n1,n2)
-    answer=[]
-    for i in range(1, number+1):
-        if n1%i==0 and n2%i==0:
-           answer.append(i)
-           gcf=answer[-1]
-    n1=[]
-    n2=[]
-    for i in range(1,number+1):
-        
-    return gcf,lcm
+def midpoint(c1, c2):
+    x=(c1(0)+c2(0))/2
+    y=(c1(1)+c2(1))/2
+    z=(c1(2)+c2(2))/2
+    return x,y,z
 
+print(midpoint([3,4,5],[10,20,30])) 
 
-print(gcflcm(24,16))
-
-8,48
+(6.5,12.0,17.5)

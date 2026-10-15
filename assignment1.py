@@ -16,8 +16,18 @@ def factors(number):
     return answer
 
 def gcflcm(n1,n2):
-    gcf = -1
-    lcm = -1
+    number=max(n1,n2)
+    answer=[]
+    for i in range(1, number+1):
+        if n1%i==0 and n2%i==0:
+           answer.append(i)
+           gcf=answer[-1]
+    greater = max(n1,n2)
+    while True:
+       if((greater % n1 == 0) and (greater % n2 == 0)):
+           lcm = greater
+           break
+       greater += 1
     return gcf,lcm
 
 assert factors(12) == [1,2,3,4,6,12]

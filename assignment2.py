@@ -13,18 +13,17 @@ To find the midpoint, of 2 coordinates in a 2d space, we find their average valu
 Write a function to determine the midpoint between 2 coordinates in 3d (x,y,z) space
 """
 
-def midpoint(c1,c2):
-    #c1 and c2 are tuples or lists in the format (x,y,z)
-    #find the midpoint between the 2 coordinates
-    x = -1
-    y = -1
-    z = -1
+def midpoint(c1, c2):
+    x=(c1[0]+c2[0])/2
+    y=(c1[1]+c2[1])/2
+    z=(c1[2]+c2[2])/2
     return x,y,z
 
 def distance (c1,c2):
     #c1 and c2 are lists or typles in the format (x,y,z)
     #find the distance between these 2 points
-    d = 0
+    =math.sqrt((cl[0]+c2[0])**2+(c1[1]+c2[1])**2)
+    d.append(answer)
     return d
 
 
